@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Climáticos y Alertas - Barranquilla Verde</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Datos Climáticos y Alertas</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="barranquillaverde.html">Mapa Interactivo</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Sección de Datos Climáticos -->
+        <section id="datos-climaticos">
+            <h2>Datos Climáticos en Tiempo Real</h2>
+            <div id="clima">
+                <p>Temperatura: <span id="temperatura">-</span>°C</p>
+                <p>Humedad: <span id="humedad">-</span>%</p>
+                <p>Calidad del aire: <span id="calidad-aire">-</span></p>
+            </div>
+            <button onclick="actualizarDatosClimaticos()">Actualizar</button>
+        </section>
+
+        <!-- Sección de Alertas Tempranas -->
+        <section id="alertas-tempranas">
+            <h2>Sistema de Alertas Tempranas</h2>
+            <p id="alerta">No hay alertas activas en este momento.</p>
+            <button onclick="simularAlerta()">Simular Alerta</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Barranquilla Verde. Todos los derechos reservados.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
